@@ -28,7 +28,8 @@ SETTINGS TO EDIT (top of each index.html, inside window.TFTC)
   hours        24-hour times, Melbourne time. Drives "Open now until..." and the "Today" row.
                The contact table is also written into the HTML, so change both if hours change.
 
-TRACKING (GTM container GTM-TN893VDN is already on both pages)
+TRACKING (the practice's Google tag script for GTM-TN893VDN is in the <head> of both pages,
+  loaded once, plus the GTM noscript fallback after <body>)
   Every call and booking button pushes a dataLayer event:
     tftc_call_click   (tel: links)
     tftc_book_click   (Core Practice booking links, open in a new tab)
