@@ -34,7 +34,7 @@
   document.querySelectorAll('[data-reviews-link]').forEach(function (a) { if (cfg.reviewsUrl) a.href = cfg.reviewsUrl; });
   if (cfg.rating) {
     document.querySelectorAll('[data-reviews-title]').forEach(function (el) { el.textContent = cfg.rating + ' on Google'; });
-    document.querySelectorAll('[data-reviews-short]').forEach(function (el) { el.textContent = cfg.rating + ' on Google'; });
+    document.querySelectorAll('[data-reviews-short]').forEach(function (el) { el.textContent = cfg.rating + (cfg.reviewCount ? ' (' + cfg.reviewCount + ' reviews)' : ' on Google'); });
   }
   if (cfg.reviewCount) {
     document.querySelectorAll('[data-reviews-sub]').forEach(function (el) { el.textContent = 'From ' + cfg.reviewCount + ' Google reviews'; });

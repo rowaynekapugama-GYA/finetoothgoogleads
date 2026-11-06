@@ -22,9 +22,9 @@ GOING LIVE (finetooth.com.au is WordPress)
      Ads still serve to them normally.
 
 SETTINGS TO EDIT (top of each index.html, inside window.TFTC)
-  rating       Leave blank until confirmed from the Google Business Profile (e.g. "4.9").
-               Blank shows "Read our Google reviews".
-  reviewCount  "106" (from the website). Update as it grows.
+  rating       "4.9" (Google Business Profile, Nov 2026). Blank shows "Read our Google reviews".
+  reviewCount  "212" (Google Business Profile, Nov 2026). Update as it grows. The reviews band
+               further down the page has the same numbers written in, so change both.
   hours        24-hour times, Melbourne time. Drives "Open now until..." and the "Today" row.
                The contact table is also written into the HTML, so change both if hours change.
 
@@ -40,12 +40,17 @@ TRACKING (GTM container GTM-TN893VDN is already on both pages)
   Test in GTM Preview before the ads go live.
 
 IMAGES
-  Team photos and the clinic photo load from the live site (finetooth.com.au/wp-content/uploads).
-  If an image can't load, the card shows initials or the tooth mark instead, so nothing breaks.
+  Clinic photos (reception, treatment rooms, team, kids, front desk) are bundled in assets/img.
+  The hero and final banner use upscaled copies (bg-*.webp) under a navy overlay. The originals
+  supplied were 680px wide, so higher-resolution versions would look sharper on large screens:
+  drop them in with the same file names.
+  The three individual team headshots load from the live site (finetooth.com.au/wp-content/uploads).
+  If one can't load, the card shows initials instead, so nothing breaks.
 
 CONFIRM WITH THE PRACTICE BEFORE LAUNCH
-  - Opening hours. The website lists Monday from 8:00am (footer says 8:30am) and Healthdirect lists
-    Tuesday until 7:30pm. Pages use the website hours.
+  - Opening hours. The website lists Friday until 5:30pm but the Google Business Profile shows
+    Friday closing at 5pm. The website also lists Monday from 8:00am (footer says 8:30am) and
+    Healthdirect lists Tuesday until 7:30pm. Pages use the website hours.
   - $299 offer terms. The website shows * and ** footnotes with no text. The pages say "X-rays and
     polish are provided where clinically appropriate. Ask our team for the full offer terms."
     Replace with the practice's own wording if different. The "$575 value" claim is left out.
@@ -57,4 +62,5 @@ CONFIRM WITH THE PRACTICE BEFORE LAUNCH
 
 COMPLIANCE NOTES
   No testimonials or review quotes, no "best" claims, no before and after photos, price shown as
-  $299 only, and the AHPRA surgical risk statement is in the footer.
+  $299 only, and the AHPRA surgical risk statement is in the footer. Reviews are shown as the
+  Google star rating and count with a link to Google, never as quotes.
